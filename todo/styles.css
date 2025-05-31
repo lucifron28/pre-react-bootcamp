@@ -13,10 +13,11 @@ body {
     display: flex;
     flex-direction: column;
     background-color: burlywood;
-    height: 50%;
-    width: 50%;
+    height: 400px;
+    width: 100%;
     margin: auto;
     padding: 20px;
+    align-items: center;
 }
 
 #app h1 {
@@ -25,6 +26,26 @@ body {
 }
 
 #app ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    overflow-y: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
     list-style: none;
-    padding: 0;
+    padding-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.task-item span {
+    flex: 1;
+    text-align: center;
 }

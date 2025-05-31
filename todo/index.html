@@ -10,12 +10,18 @@
     <div id="app">
         <h1>My Tasks</h1>
 
-        <div>
-            <ul id="tasks">
 
-            </ul>
-        </div>
+        <ul id="tasks"></ul>
+
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Add a new task" required>
+            <button type="submit">Submit</button>
+            <button type="button">Cancel</button>
+        </form>
+        <button type="button" id="add-task-button">Add task</button>
+        <button type="button" id="clear-tasks-button">Clear All Tasks</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
