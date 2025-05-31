@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+#app h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#app ul {
+    list-style: none;
+    padding: 0;
+}
