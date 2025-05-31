@@ -49,3 +49,41 @@ body {
     flex: 1;
     text-align: center;
 }
+
+#modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #6b6767;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in;
+}
+
+#modal.active {
+    pointer-events: auto;
+    opacity: 1;
+    display: flex;
+}
+
+#task-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-width: 100%;
+    background: beige;
+    text-align: center;
+    padding: 25px 50px;
+    gap: 10px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}

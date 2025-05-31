@@ -12,16 +12,22 @@
 
 
         <ul id="tasks"></ul>
-
-        <form id="task-form">
-            <input type="text" id="task-input" placeholder="Add a new task" required>
-            <button type="submit">Submit</button>
-            <button type="button">Cancel</button>
-        </form>
-        <button type="button" id="add-task-button">Add task</button>
-        <button type="button" id="clear-tasks-button">Clear All Tasks</button>
+        <div id="modal">
+            <form id="task-form">
+                <h2>Add a task</h2>
+                <input type="text" id="task-input" placeholder="Add a new task" required>
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="button" id="cancel-button">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div class="task-management-buttons">
+            <button type="button" id="add-task-button">Add task</button>
+            <button type="button" id="clear-tasks-button">Clear All Tasks</button>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </body>
 </html>
