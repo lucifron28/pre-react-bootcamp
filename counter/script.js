@@ -20,6 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowUp") {
+            incrementCounter();
+        } else if (e.key === "ArrowDown") {
+            decrementCounter();
+        }
+    });
+
     incrementButton.addEventListener("click", incrementCounter);
     decrementButton.addEventListener("click", decrementCounter);
 });
